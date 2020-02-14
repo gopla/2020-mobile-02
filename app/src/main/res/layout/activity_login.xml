@@ -161,7 +161,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnLoginProviderFacebook" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnBackLogin"
         android:layout_width="30dp"
         android:layout_height="24dp"
         android:layout_marginStart="32dp"
