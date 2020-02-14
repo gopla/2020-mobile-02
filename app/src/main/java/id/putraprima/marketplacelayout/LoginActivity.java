@@ -7,23 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import static id.putraprima.marketplacelayout.R.*;
+public class LoginActivity extends AppCompatActivity {
 
-public class MainActivity extends AppCompatActivity {
-    Button btnLogin;
+    Button btnProviderRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(layout.activity_main);
+        setContentView(R.layout.activity_login);
 
-        btnLogin = findViewById(id.btnProvider);
-        btnLogin.setOnClickListener(new View.OnClickListener() {
+        btnProviderRegister = findViewById(R.id.btnProviderRegister);
+        btnProviderRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
             }
         });
-    }
-
+    };
 }
